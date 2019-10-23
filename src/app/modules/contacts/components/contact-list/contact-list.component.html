@@ -1,0 +1,15 @@
+<div *ngFor="let contact of (contacts$ | async)" fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px">
+  <div fxFlex="15">
+    <img src="assets/images/{{ contact.img }}" />
+    <div class="b-check">
+      <img src="assets/icons/selected.svg" />
+    </div>
+  </div>
+
+  <div class="contact-name" fxFlex fxLayoutAlign="start center">
+    <span>{{ contact?.name }}</span>
+  </div>
+  <!-- <div class="contact--action" fxFlex="5">
+    no icon atm
+  </div> -->
+</div>

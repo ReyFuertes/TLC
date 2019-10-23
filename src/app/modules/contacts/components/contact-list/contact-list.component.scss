@@ -1,0 +1,36 @@
+@import "src/theme/shared";
+
+.contact-name {
+  border-bottom: thin $color-gray solid;
+  height: 35px;
+  
+  span {
+    font-size: 16px;
+  }
+}
+
+img {
+  height: 35px;
+  width: 35px;
+}
+
+.contact-action {
+  border-bottom: thin $color-gray solid;
+}
+
+.img-40 {
+  width: 40px;
+  height: auto;
+}
+
+.b-check {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  top: 24px;
+  left: 27px;
+
+}

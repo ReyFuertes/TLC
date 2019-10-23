@@ -1,0 +1,45 @@
+<ion-toolbar class="down-edge-shadow">
+  <div fxLayout="row">
+    <div routerLink="/dashboard/home" fxFlex="50" fxFlexOffset="3" fxLayoutAlign="start center">
+      <img src="assets/icons/arrow_back.svg" />
+      <span>Contacts</span>
+    </div>
+    <div fxFlex="50" fxLayoutAlign="end center" fxLayoutGap="20px">
+    </div>
+  </div>
+</ion-toolbar>
+
+<ion-content class="contact-container">
+  <div class="contact-search__container">
+    <app-contact-search></app-contact-search>
+  </div>
+
+  <div class="search-results" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="10px">
+    <div *ngFor="let i of [0, 1, 2]">
+      <img src="assets/images/ci-1-2x.png" />
+    </div>
+  </div>
+
+  <div class="contact-list__container">
+    <app-contact-list></app-contact-list>
+  </div>
+
+  <div class="contact-pymk__container" fxLayout="column" fxLayoutGap="20px">
+    <small>People you may know</small>
+    <app-contact-list></app-contact-list>
+  </div>
+</ion-content>
+
+<ion-content class="c__icon-panel">
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" fxFlexFill>
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <img src="assets/icons/add_users.svg" />
+      <span>Add</span>
+    </div>
+
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <img src="assets/icons/remove.svg" />
+      <span>Remove</span>
+    </div>
+  </div>
+</ion-content>
